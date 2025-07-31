@@ -16,16 +16,16 @@ A Python tool to fetch PubMed articles and identify those with industry affiliat
 
 ## Code Organization 🗂️
 pubmed_fetcher/
-├── init.py # Package initialization
-├── version.py # Version information
-├── utils.py # Utility functions
+├── init.py
+├── version.py
+├── utils.py
 │ ├── API request handling
 │ ├── XML parsing
 │ ├── Affiliation analysis
-├── core.py # Core functionality
+├── core.py
 │ ├── PubMed API interactions
 │ ├── Paper processing logic
-└── cli.py # Command-line interface
+└── cli.py
 │ ├── Argument parsing
 │ ├── Output formatting
 
