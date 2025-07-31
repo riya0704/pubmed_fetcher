@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "pubmed-fetcher-riya0711"
+version = "0.1.2"
+description = "CLI tool to fetch PubMed papers with non-academic authors from biotech/pharma companies"
+authors = ["riya"]
+readme = "README.md"
+packages = [
+    { include = "pubmed_fetcher" }
+]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<4.0"
+requests = ">=2.32.4,<3.0.0"
+typer = ">=0.16.0,<0.17.0"
+beautifulsoup4 = ">=4.13.4,<5.0.0"
+lxml = ">=6.0.0,<7.0.0"
+python-dotenv = "^1.1.1"
+
+[tool.poetry.scripts]
+get-papers-list = "pubmed_fetcher.cli:get_papers_list"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
